@@ -1,0 +1,117 @@
+/* .div-edit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.css {
+   background: linear-gradient(to bottom, #ffd700, #d4af37); 
+  background-color: white;
+   border: 3px solid #8b6f00;
+  border: 3px solid white;
+  border-radius: 50%;
+  padding: 15px;
+   box-shadow: 0 5px 0 #8b6f00, inset 0 2px 3px rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: 0.5s;
+ }
+.css img {
+  width: 34px;
+  height: 34px;
+  transition: 0.2s;
+   filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5)); 
+}
+ .css:hover {
+  background: linear-gradient(to bottom, #ffeb70, #e5c64d);
+  transform: scale(1.1);
+} 
+img:active {
+   transform: translateY(3px);
+  box-shadow: 0 2px 0 #8b6f00; 
+   width: 40px;
+  height: 40px;
+  opacity: 0.8;
+}   */
+.button-edit {
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  color: black;
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.button-edit2 {
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  color: green;
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.button-edit3 {
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  color: blue;
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.button-edit:active {
+  font-size: 26px;
+  background-color: rgb(196, 189, 189);
+  width: 31px;
+  height: 31px;
+  opacity: 0.8;
+}
+.button-edit2:active {
+  font-size: 26px;
+  background-color: rgb(196, 189, 189);
+  width: 31px;
+  height: 31px;
+  opacity: 0.8;
+}
+.button-edit3:active {
+  font-size: 26px;
+  background-color: rgb(196, 189, 189);
+  width: 31px;
+  height: 31px;
+  opacity: 0.8;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div-edit {
+  background-color: white;
+  margin-top: 50px;
+}
+.div-edit2 {
+  margin-top: 30px;
+  box-shadow: 0px -1px 2px black;
+  padding: 25px;
+  font-weight: bold;
+  font-size: 27px;
+}
+.div-edit3 {
+  display: flex;
+  gap: 50px;
+}
+.div-edit4 {
+  margin-top: 30px;
+  box-shadow: 0px 1px 2px black;
+  padding: 25px;
+}
+img {
+  object-fit: cover;
+  width: 30px;
+  height: 30px;
+}

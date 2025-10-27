@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ماشین حساب با چهار عمل اصلی -->
+    <!-- <header>
+      <div class="div-edit">
+        <div class="div-edit2">
+          <div id="display">0</div>
+        </div>
+        <div class="div-edit4">
+          <div class="div-edit3">
+            <button onclick="clearDisplay()" class="button-edit2">
+              <b>C</b>
+            </button>
+            <button class="button-edit"></button>
+            <button onclick="setOperation('*')" class="button-edit">x</button>
+            <button onclick="setOperation('/')" class="button-edit">÷</button>
+          </div>
+
+          <br /><br />
+          <div class="div-edit3">
+            <button onclick="appendNumber(7)" class="button-edit">7</button>
+            <button onclick="appendNumber(8)" class="button-edit">8</button>
+            <button onclick="appendNumber(9)" class="button-edit">9</button>
+            <button onclick="setOperation('+')" class="button-edit">+</button>
+          </div>
+          <br /><br />
+          <div class="div-edit3">
+            <button onclick="appendNumber(4)" class="button-edit">4</button>
+            <button onclick="appendNumber(5)" class="button-edit">5</button>
+            <button onclick="appendNumber(6)" class="button-edit">6</button>
+            <button onclick="setOperation('-')" class="button-edit">-</button>
+          </div>
+
+          <br /><br />
+          <div class="div-edit3">
+            <button onclick="appendNumber(1)" class="button-edit">1</button>
+            <button onclick="appendNumber(2)" class="button-edit">2</button>
+            <button onclick="appendNumber(3)" class="button-edit">3</button>
+          </div>
+
+          <br /><br />
+          <div class="div-edit3">
+            <button class="button-edit"></button>
+            <button onclick="appendNumber(0)" class="button-edit">0</button>
+            <button onclick="appendNumber('.')" class="button-edit">.</button>
+            <button onclick="calculate()" class="button-edit3"><b>=</b></button>
+          </div>
+        </div>
+      </div>
+    </header> -->
+
+    <!-- <div class="div-edit">
+      <button class="css">
+        <img src="./next.png" alt="next" />
+      </button>
+    </div> -->
+    <!-- --------------------------------------------------------------------------------------------------- -->
+    <!-- قابلیت های جدید
+     1.نمایش لحظه ای ورودی ها
+     2.ادامه ی محاسبه بعداز مساوی
+
+    <header>
+      <div class="div-edit">
+        <div class="div-edit2">
+          <div id="display">0</div>
+        </div>
+        <div class="div-edit4">
+          <div class="div-edit3">
+            <button onclick="clearDisplay()" class="button-edit2">
+              <b>C</b>
+            </button>
+            <button class="button-edit"></button>
+            <button onclick="setOperation('*')" class="button-edit">x</button>
+            <button onclick="setOperation('/')" class="button-edit">÷</button>
+          </div>
+
+          <br /><br />
+          <div class="div-edit3">
+            <button onclick="appendNumber(7)" class="button-edit">7</button>
+            <button onclick="appendNumber(8)" class="button-edit">8</button>
+            <button onclick="appendNumber(9)" class="button-edit">9</button>
+            <button onclick="setOperation('+')" class="button-edit">+</button>
+          </div>
+          <br /><br />
+          <div class="div-edit3">
+            <button onclick="appendNumber(4)" class="button-edit">4</button>
+            <button onclick="appendNumber(5)" class="button-edit">5</button>
+            <button onclick="appendNumber(6)" class="button-edit">6</button>
+            <button onclick="setOperation('-')" class="button-edit">-</button>
+          </div>
+
+          <br /><br />
+          <div class="div-edit3">
+            <button onclick="appendNumber(1)" class="button-edit">1</button>
+            <button onclick="appendNumber(2)" class="button-edit">2</button>
+            <button onclick="appendNumber(3)" class="button-edit">3</button>
+          </div>
+
+          <br /><br />
+          <div class="div-edit3">
+            <button class="button-edit"></button>
+            <button onclick="appendNumber(0)" class="button-edit">0</button>
+            <button onclick="appendNumber('.')" class="button-edit">.</button>
+            <button onclick="calculate()" class="button-edit3"><b>=</b></button>
+          </div>
+        </div>
+      </div>
+    </header>
+         --------------------------------------------------------------------------------------------------- -->
+    <!-- 1.پشتیبانی از چند مرحله پشت سر هم 
+        2.اضافه شدن اعداد فارسی 
+        -->
+    <header>
+      <div class="div-edit">
+        <div class="div-edit2">
+          <div id="display">0</div>
+        </div>
+        <div class="div-edit4">
+          <div class="div-edit3">
+            <button onclick="clearDisplay()" class="button-edit2">
+              <img src="./moonlight.png" alt="" />
+            </button>
+            <button class="button-edit" onclick="backspace()">
+              <img src="./delete.png" alt="" />
+            </button>
+            <button class="button-edit"></button>
+            <button onclick="setOperation('*')" class="button-edit">
+              <img src="./multiply.png" alt="" />
+            </button>
+          </div>
+
+          <br /><br />
+          <div class="div-edit3">
+            <button onclick="appendNumber(7)" class="button-edit">7</button>
+            <button onclick="appendNumber(8)" class="button-edit">8</button>
+            <button onclick="appendNumber(9)" class="button-edit">9</button>
+            <button onclick="setOperation('/')" class="button-edit">
+              <img src="./percentage.png" alt="" />
+            </button>
+          </div>
+          <br /><br />
+          <div class="div-edit3">
+            <button onclick="appendNumber(4)" class="button-edit">4</button>
+            <button onclick="appendNumber(5)" class="button-edit">5</button>
+            <button onclick="appendNumber(6)" class="button-edit">6</button>
+            <button onclick="setOperation('+')" class="button-edit">
+              <img src="./plus.png" alt="" />
+            </button>
+          </div>
+
+          <br /><br />
+          <div class="div-edit3">
+            <button onclick="appendNumber(1)" class="button-edit">1</button>
+            <button onclick="appendNumber(2)" class="button-edit">2</button>
+            <button onclick="appendNumber(3)" class="button-edit">3</button>
+            <button onclick="setOperation('-')" class="button-edit">
+              <img src="./minus.png" alt="" />
+            </button>
+          </div>
+
+          <br /><br />
+          <div class="div-edit3">
+            <button class="button-edit"></button>
+            <button onclick="appendNumber(0)" class="button-edit">0</button>
+            <button onclick="appendNumber('.')" class="button-edit">.</button>
+            <button onclick="calculate()" class="button-edit3">
+              <img src="./equal.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script src="javascript.js"></script>
+  </body>
+</html>
